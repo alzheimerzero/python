@@ -1,0 +1,30 @@
+print("введите размер массива")
+N = int(input())
+A = [0] * N
+for i in range(N):
+  A[i] = int(input())
+print(*A)
+
+print("введите сторону сдвига R/L")
+side = input()
+print("ведите сдвиг:")
+shift = int(input())
+if side == 'R':
+  for i in range(shift):
+    tmp = A[N - 1]
+    for i in range(N - 1, 0, -1):
+      A[i] = A[i - 1]
+    A[0] = tmp
+    print(*A)
+elif side == 'L':
+  for i in range(shift):
+    tmp = A[0]
+    for i in range(N - 1):
+      A[i] = A[i + 1]
+    A[N - 1] = tmp
+else:
+  print("неверная сторона")
+print(*A)
+N = [1,2,3,4,5]
+print(len(N))
+print(N[len(N) - 1])
