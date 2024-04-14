@@ -1,0 +1,16 @@
+num1 = float(input("введите первое число: "))
+num2 = float(input("введите второе число: "))
+operation = input("выберите операцию (+, -, *, /): ")
+
+if operation == "+":
+    result = num1 + num2
+elif operation == "-":
+    result = num1 * num2
+elif operation == "*":
+    result = num1 * num2
+elif operation == "/":
+    result = num1 / num2
+else:
+    print("неверная операция!")
+
+print("ответ:", result)

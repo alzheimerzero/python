@@ -1,0 +1,9 @@
+A = [1,2,3,1,2,3,5]
+def unique_list(A):
+    unique = []
+    for i in A :
+        if i not in unique:
+            unique.append(i)
+    return unique
+
+print(unique_list([1,2,3,1,2,3,5]))
